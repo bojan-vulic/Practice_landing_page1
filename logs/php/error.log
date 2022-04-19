@@ -1,0 +1,6 @@
+[20-Dec-2021 11:39:39 UTC] WordPress database error Unknown error 1146 for query 
+			SELECT COUNT(NULLIF(`meta_value` LIKE '%\"administrator\"%', false)), COUNT(NULLIF(`meta_value` LIKE '%\"editor\"%', false)), COUNT(NULLIF(`meta_value` LIKE '%\"author\"%', false)), COUNT(NULLIF(`meta_value` LIKE '%\"contributor\"%', false)), COUNT(NULLIF(`meta_value` LIKE '%\"subscriber\"%', false)), COUNT(NULLIF(`meta_value` = 'a:0:{}', false)), COUNT(*)
+			FROM wp_usermeta
+			INNER JOIN wp_users ON user_id = ID
+			WHERE meta_key = 'wp_capabilities'
+		 made by include('phar:///opt/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php'), include('phar:///opt/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php'), WP_CLI\bootstrap, WP_CLI\Bootstrap\LaunchRunner->process, WP_CLI\Runner->start, WP_CLI\Runner->run_command_and_exit, WP_CLI\Runner->run_command, WP_CLI\Dispatcher\Subcommand->invoke, call_user_func, WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}, call_user_func, Core_Command->check_update, Core_Command->get_updates, wp_version_check, count_users
